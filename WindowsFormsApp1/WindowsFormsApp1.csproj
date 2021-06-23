@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -48,8 +48,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Users\ASUS\Documents\Visual Studio 2019\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,16 +66,205 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AssigningGrade.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AssigningGrade.Designer.cs">
+      <DependentUpon>AssigningGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseForm.Designer.cs">
+      <DependentUpon>ChooseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course.Designer.cs">
+      <DependentUpon>Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course01.Designer.cs">
+      <DependentUpon>Course01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exam01.Designer.cs">
+      <DependentUpon>Exam01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecRemv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecRemv.Designer.cs">
+      <DependentUpon>LecRemv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lectures01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lectures01.Designer.cs">
+      <DependentUpon>Lectures01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LecViewDetal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LecViewDetal.Designer.cs">
+      <DependentUpon>LecViewDetal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment01.Designer.cs">
+      <DependentUpon>Payment01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentCof.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentCof.Designer.cs">
+      <DependentUpon>PaymentCof.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project01.Designer.cs">
+      <DependentUpon>Project01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjRemv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjRemv.Designer.cs">
+      <DependentUpon>ProjRemv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemvCourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemvCourses.Designer.cs">
+      <DependentUpon>RemvCourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReserchProj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReserchProj.Designer.cs">
+      <DependentUpon>ReserchProj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResitRegis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResitRegis.Designer.cs">
+      <DependentUpon>ResitRegis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudenReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudenReg.Designer.cs">
+      <DependentUpon>StudenReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LectureReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LectureReg.Designer.cs">
+      <DependentUpon>LectureReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress01.Designer.cs">
+      <DependentUpon>Progress01.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Students01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students01.Designer.cs">
+      <DependentUpon>Students01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StuRemv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StuRemv.Designer.cs">
+      <DependentUpon>StuRemv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StuVewData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StuVewData.Designer.cs">
+      <DependentUpon>StuVewData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCourse.Designer.cs">
+      <DependentUpon>ViewCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPay.Designer.cs">
+      <DependentUpon>ViewPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProj.Designer.cs">
+      <DependentUpon>ViewProj.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AssigningGrade.resx">
+      <DependentUpon>AssigningGrade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseForm.resx">
+      <DependentUpon>ChooseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course.resx">
+      <DependentUpon>Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course01.resx">
+      <DependentUpon>Course01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam01.resx">
+      <DependentUpon>Exam01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecRemv.resx">
+      <DependentUpon>LecRemv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lectures01.resx">
+      <DependentUpon>Lectures01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LecViewDetal.resx">
+      <DependentUpon>LecViewDetal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment01.resx">
+      <DependentUpon>Payment01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentCof.resx">
+      <DependentUpon>PaymentCof.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project01.resx">
+      <DependentUpon>Project01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjRemv.resx">
+      <DependentUpon>ProjRemv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemvCourses.resx">
+      <DependentUpon>RemvCourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReserchProj.resx">
+      <DependentUpon>ReserchProj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResitRegis.resx">
+      <DependentUpon>ResitRegis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudenReg.resx">
+      <DependentUpon>StudenReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LectureReg.resx">
+      <DependentUpon>LectureReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress01.resx">
+      <DependentUpon>Progress01.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,7 +274,26 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Students01.resx">
+      <DependentUpon>Students01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StuRemv.resx">
+      <DependentUpon>StuRemv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StuVewData.resx">
+      <DependentUpon>StuVewData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCourse.resx">
+      <DependentUpon>ViewCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPay.resx">
+      <DependentUpon>ViewPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProj.resx">
+      <DependentUpon>ViewProj.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -102,6 +315,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>CodderUpper.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\pngwing.com %2821%29.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
