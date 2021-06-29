@@ -137,9 +137,9 @@ namespace WindowsFormsApp1
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(435, 229);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 19);
+            this.label5.Size = new System.Drawing.Size(130, 19);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Mobil Number";
+            this.label5.Text = "Mobile Number";
             // 
             // label6
             // 

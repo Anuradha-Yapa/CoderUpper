@@ -746,6 +746,7 @@ namespace WindowsFormsApp1
             this.bunifuThinButton21.Size = new System.Drawing.Size(209, 56);
             this.bunifuThinButton21.TabIndex = 91;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // LectureReg
             // 

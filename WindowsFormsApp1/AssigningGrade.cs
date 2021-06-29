@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
@@ -32,6 +33,12 @@ namespace WindowsFormsApp1
             Exam01 Ex1 = new Exam01();
             Ex1.Show();
             this.Hide();
+        }
+
+        private void bunifuThinButton24_Click(object sender, EventArgs e)
+        {
+
+
         }
     }
 }

@@ -454,6 +454,7 @@ namespace WindowsFormsApp1
             this.bunifuThinButton24.Size = new System.Drawing.Size(147, 59);
             this.bunifuThinButton24.TabIndex = 171;
             this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
             // 
             // bunifuThinButton23
             // 
