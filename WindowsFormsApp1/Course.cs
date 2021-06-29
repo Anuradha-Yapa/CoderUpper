@@ -39,5 +39,10 @@ namespace WindowsFormsApp1
             this.Hide();
 
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

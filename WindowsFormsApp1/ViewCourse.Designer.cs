@@ -65,11 +65,12 @@ namespace WindowsFormsApp1
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(198, 104);
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(188, 113);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
             this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(1086, 658);
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(800, 282);
             this.bunifuCustomDataGrid1.TabIndex = 174;
+            this.bunifuCustomDataGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellContentClick);
             // 
             // label23
             // 
@@ -109,11 +110,11 @@ namespace WindowsFormsApp1
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label13.Location = new System.Drawing.Point(604, 35);
+            this.label13.Location = new System.Drawing.Point(463, 32);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(230, 33);
+            this.label13.Size = new System.Drawing.Size(202, 33);
             this.label13.TabIndex = 170;
-            this.label13.Text = "Coureses Details";
+            this.label13.Text = "Course Details";
             // 
             // bunifuThinButton22
             // 
@@ -133,7 +134,7 @@ namespace WindowsFormsApp1
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.DarkTurquoise;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Azure;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(19, 702);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(11, 449);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(160, 56);
@@ -146,7 +147,7 @@ namespace WindowsFormsApp1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1280, 734);
+            this.ClientSize = new System.Drawing.Size(1300, 650);
             this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.bunifuCustomDataGrid1);
             this.Controls.Add(this.label23);
@@ -154,8 +155,8 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label13);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(1296, 773);
-            this.MinimumSize = new System.Drawing.Size(1296, 773);
+            this.MaximumSize = new System.Drawing.Size(1300, 650);
+            this.MinimumSize = new System.Drawing.Size(1300, 650);
             this.Name = "ViewCourse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewCourse";

@@ -30,26 +30,14 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Exam01));
-            this.label16 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label22 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Purple;
-            this.label16.Location = new System.Drawing.Point(744, 2);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(26, 25);
-            this.label16.TabIndex = 173;
-            this.label16.Text = "X";
-            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label23
             // 
@@ -78,11 +66,11 @@ namespace WindowsFormsApp1
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label13.Location = new System.Drawing.Point(297, 29);
+            this.label13.Location = new System.Drawing.Point(230, 29);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(176, 33);
+            this.label13.Size = new System.Drawing.Size(186, 33);
             this.label13.TabIndex = 170;
-            this.label13.Text = "Examination";
+            this.label13.Text = "Examinations";
             // 
             // bunifuThinButton24
             // 
@@ -102,7 +90,7 @@ namespace WindowsFormsApp1
             this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.Purple;
             this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.Violet;
             this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton24.Location = new System.Drawing.Point(638, 414);
+            this.bunifuThinButton24.Location = new System.Drawing.Point(271, 435);
             this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton24.Name = "bunifuThinButton24";
             this.bunifuThinButton24.Size = new System.Drawing.Size(112, 56);
@@ -128,7 +116,7 @@ namespace WindowsFormsApp1
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Violet;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Purple;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(204, 261);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(159, 280);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(343, 77);
@@ -154,7 +142,7 @@ namespace WindowsFormsApp1
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.Violet;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Purple;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(204, 161);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(159, 177);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(343, 77);
@@ -162,22 +150,33 @@ namespace WindowsFormsApp1
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Purple;
+            this.label22.Location = new System.Drawing.Point(605, 9);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(33, 32);
+            this.label22.TabIndex = 175;
+            this.label22.Text = "X";
+            // 
             // Exam01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(772, 484);
+            this.ClientSize = new System.Drawing.Size(650, 650);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.bunifuThinButton24);
-            this.Controls.Add(this.label16);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.bunifuThinButton22);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(772, 484);
-            this.MinimumSize = new System.Drawing.Size(772, 484);
+            this.MaximumSize = new System.Drawing.Size(650, 650);
+            this.MinimumSize = new System.Drawing.Size(650, 650);
             this.Name = "Exam01";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Exam01";
@@ -189,11 +188,11 @@ namespace WindowsFormsApp1
         #endregion
 
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label13;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private System.Windows.Forms.Label label22;
     }
 }

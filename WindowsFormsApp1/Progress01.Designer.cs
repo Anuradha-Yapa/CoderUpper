@@ -63,11 +63,11 @@ namespace WindowsFormsApp1
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Purple;
-            this.label2.Location = new System.Drawing.Point(143, 200);
+            this.label2.Location = new System.Drawing.Point(116, 200);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(441, 21);
+            this.label2.Size = new System.Drawing.Size(522, 22);
             this.label2.TabIndex = 96;
             this.label2.Text = "M o r w e l l   I n s t i t u t e   o f   H i g h e r   E d u c a t i o n";
             // 

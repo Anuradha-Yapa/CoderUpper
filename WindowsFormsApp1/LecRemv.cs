@@ -29,5 +29,10 @@ namespace WindowsFormsApp1
             this.Hide();
 
         }
+
+        private void bunifuMaterialTextbox3_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

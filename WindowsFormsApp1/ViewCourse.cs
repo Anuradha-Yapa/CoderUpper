@@ -23,5 +23,10 @@ namespace WindowsFormsApp1
             c1.Show();
             this.Hide();
         }
+
+        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
