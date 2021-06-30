@@ -33,5 +33,18 @@ namespace WindowsFormsApp1
             st.Show();
             this.Hide();
         }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            int UserID = int.Parse(bunifuMaterialTextbox3.Text);
+
+            String del = "DELETE FROM Student where ID =" + UserID + "";
+
+            DBConnection dbc = new DBConnection();
+            string feedback = dbc.DBCon(del);
+
+            MessageBox.Show(feedback);
+            bunifuMaterialTextbox3.Text = "";
+        }
     }
 }

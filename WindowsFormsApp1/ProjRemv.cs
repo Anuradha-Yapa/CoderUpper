@@ -28,5 +28,18 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            int projID = int.Parse(bunifuMaterialTextbox3.Text);
+
+            String del = "DELETE FROM  ResearchProjects where ProjectID =" + projID + "";
+
+            DBConnection dbc = new DBConnection();
+            string feedback = dbc.DBCon(del);
+
+            MessageBox.Show(feedback);
+            bunifuMaterialTextbox3.Text = "";
+        }
     }
 }

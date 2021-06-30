@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
@@ -19,7 +20,15 @@ namespace WindowsFormsApp1
 
         private void label22_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Are You Sure Exit the Program?", "Confirmation Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                this.Activate();
+            }
+            
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
@@ -31,12 +40,33 @@ namespace WindowsFormsApp1
 
         private void StuVewData_Load(object sender, EventArgs e)
         {
+            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True";
+            string qry = "SELECT * FROM Student";
 
-        }
 
-        private void label16_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
+
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter(qry, con);
+                DataSet ds = new DataSet();
+                da.Fill(ds, "Student");
+                dataGridView1.DataSource = ds.Tables["Student"];
+            }
+
+
+
+            catch (SqlException SE)
+            {
+                MessageBox.Show(SE.ToString());
+            }
         }
     }
-}
+
+        /*private void label22_Click(object sender, EventArgs e)
+        {
+            
+        } */
+
+
+    }
+

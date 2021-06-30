@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
@@ -28,6 +29,29 @@ namespace WindowsFormsApp1
             lec1.Show();
             this.Hide();
 
+        }
+
+        private void LecViewDetal_Load(object sender, EventArgs e)
+        {
+            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True";
+            string qry = "SELECT * FROM Lecturer";
+
+
+
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter(qry, con);
+                DataSet ds = new DataSet();
+                da.Fill(ds, "Lecturer");
+                dataGridView1.DataSource = ds.Tables["Lecturer"];
+            }
+
+
+
+            catch (SqlException SE)
+            {
+                MessageBox.Show(SE.ToString());
+            }
         }
     }
 }

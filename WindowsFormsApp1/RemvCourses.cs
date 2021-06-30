@@ -28,5 +28,18 @@ namespace WindowsFormsApp1
             c1.Show();
             this.Hide();
         }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            int courseID = int.Parse(bunifuMaterialTextbox3.Text);
+
+            String del = "DELETE FROM  Course where CourseID =" + courseID + "";
+
+            DBConnection dbc = new DBConnection();
+            string feedback = dbc.DBCon(del);
+
+            MessageBox.Show(feedback);
+            bunifuMaterialTextbox3.Text = "";
+        }
     }
 }

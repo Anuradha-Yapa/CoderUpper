@@ -220,9 +220,9 @@ namespace WindowsFormsApp1
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(157, 454);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 19);
+            this.label6.Size = new System.Drawing.Size(134, 19);
             this.label6.TabIndex = 185;
-            this.label6.Text = "Subject Name";
+            this.label6.Text = "Resitting Module";
             // 
             // bunifuMaterialTextbox5
             // 
@@ -360,6 +360,7 @@ namespace WindowsFormsApp1
             this.bunifuThinButton21.Size = new System.Drawing.Size(209, 56);
             this.bunifuThinButton21.TabIndex = 193;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // bunifuThinButton22
             // 
@@ -411,6 +412,7 @@ namespace WindowsFormsApp1
             this.bunifuThinButton24.Size = new System.Drawing.Size(132, 52);
             this.bunifuThinButton24.TabIndex = 181;
             this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
             // 
             // ResitRegis
             // 
