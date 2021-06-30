@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Century Gothic", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.Purple;
-            this.label23.Location = new System.Drawing.Point(37, 51);
+            this.label23.Location = new System.Drawing.Point(21, 66);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(200, 9);
             this.label23.TabIndex = 161;
@@ -56,7 +56,7 @@ namespace WindowsFormsApp1
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Old English Text MT", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.Purple;
-            this.label24.Location = new System.Drawing.Point(59, 9);
+            this.label24.Location = new System.Drawing.Point(48, 26);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(139, 42);
             this.label24.TabIndex = 160;
@@ -67,7 +67,7 @@ namespace WindowsFormsApp1
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Purple;
-            this.label22.Location = new System.Drawing.Point(1260, 2);
+            this.label22.Location = new System.Drawing.Point(1255, 9);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(33, 32);
             this.label22.TabIndex = 159;
@@ -79,7 +79,7 @@ namespace WindowsFormsApp1
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label13.Location = new System.Drawing.Point(526, 15);
+            this.label13.Location = new System.Drawing.Point(524, 51);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(336, 33);
             this.label13.TabIndex = 158;
@@ -103,10 +103,10 @@ namespace WindowsFormsApp1
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.DarkTurquoise;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Azure;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(48, 580);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(22, 571);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(160, 56);
+            this.bunifuThinButton22.Size = new System.Drawing.Size(176, 65);
             this.bunifuThinButton22.TabIndex = 163;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
@@ -114,6 +114,7 @@ namespace WindowsFormsApp1
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.PeachPuff;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.PeachPuff;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -124,9 +125,9 @@ namespace WindowsFormsApp1
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.LightSalmon;
-            this.dataGridView1.Location = new System.Drawing.Point(228, 130);
+            this.dataGridView1.Location = new System.Drawing.Point(231, 125);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1060, 508);
+            this.dataGridView1.Size = new System.Drawing.Size(1047, 508);
             this.dataGridView1.TabIndex = 202;
             // 
             // LecViewDetal

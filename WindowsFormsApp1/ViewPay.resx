@@ -120,17 +120,17 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuThinButton22.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAKAAAAA4CAYAAAB6+vMDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH1SURBVHhe7d27LkRRFIdxpVKpVCqVSqXHUHoLpVKpVCo9
-        gsFcMBchZISgIHEJGYm4hdiytszEMcswY7Z/8xW/RLHmVF/2Ofsk9hkIuRAAFQKEFAFCigAhRYCQIkBI
-        /SrA+upTWM7fhYXCTZgpXQAdWSfWy9bag9vTZx0DnCtehdHKfhiobQM9GanUY5SPuTe3MTdAW/HGy4fu
-        BYFe2EJWWrtva60tQFs+B2s77kWAv5otXWZ6ywRoKx/xITV7PnQD5LaL/zBc3QuNlddsgLbh8IaBFKY2
-        TrMB2m7FGwRSsEc9WwVjgPa+xhsCUlrK334EuFhouANASrYjjgHy/AcFe0EdA4x/OANASgQIKQKEFAFC
-        igAhRYCQIkBIESCkCBBSBAgpAoQUAUKKACFFgJAiQEgRIKQIEFIECCkChBQBQooAIUWAkCJASLUCjP8g
-        7AwAKbUCtDMBvQEgpVaAdnKlNwCkFI+EsQDt/N6h6q47BKRysvr8EaCZXj9zh4AUxsoH2fMBz1de4smV
-        3jDQT3Y2YPMTDq0ATTyvzfkB0E+fDyrPBGi4FSOlyc3jTG9tARp7LcOmBP1kt92vn2gwboDGngknykfu
-        xYBufPeRGvNtgE22VZ4vXseXhkA37ORd+/aM11XTjwECKREgpAgQUgQIKQKEUAjvV4LP6iiSxgkAAAAA
-        SUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAALEAAABBCAYAAACeu0XcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIXSURBVHhe7d27LkRRFIdxpVKpVE6pVCo9htJbKJVKpVLp
+        Ecx9MIMQMhOCgsQlZCTiFmLL2pOZzMksl8bM/idf8UsUy6m+nOyzJdZYyIcAKCNiyCNiyCNiyCNiyCNi
+        yPtTxM3ia9goP4bVyn1YrF0D/85as+b2Ss9uk/1+jHi5ehtyjVYY290HRmaq0Yxhv+Q/3U7diO3NO1M/
+        cR8IjIq9UGulp4FeByK21/j47oH7ECAFS7WbTLOZiO0NTMBQYOdlN2KOEFAxuXMU2oWPbMT2EecNA6ma
+        37rIRmxfgN4gkCo7+trbOEZsd3HeEJC69fJDJ+K1StsdAFJnNxUxYs7DUGV/BIkRxx+cASB1RAx5RAx5
+        RAx5RAx5RAx5RAx5RAx5RAx5RAx5RAx5RAx5RAx5RAx5RAx5RAx5RAx5RAx5RAx5RAx5RAx5RAx5RAx5
+        RAx5RAx5RAx5RAx5RAx5RAx5RAx5RAx5RAx5vYjjf9t2BoDU9SK2BYzeAJC6XsS2atQbAFIX981YxLb4
+        eWLn0B0CUnZefOtEbBY2L90hIFXT9ePsMsarwntcNeoNA6mxRYy2fzETsYmL7ZxfAFLTv2k/E7HhWIHU
+        zW2fZZodiNjYlRsfekiNHSH638BdbsTGzsiz9VP3YcCw5RqteBXstfptxF12hbFSvYuXysCw2crmZvHV
+        bbPr14iB1BEx5BEx5BEx5BExxIXwBTNnzwXawCxcAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>

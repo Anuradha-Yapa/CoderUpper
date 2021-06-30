@@ -120,16 +120,16 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuThinButton24.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHAAAAA4CAYAAAAl63xKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHkSURBVHhe7dwhT0JRGMZxkslkMplMJpOfweRnMJlMJpMj
-        EAgEAnMEAnMEkyOQLLgRCAQCgUgg3EAgEAiEo89B7rjwohbhfbYn/DbDuxv479577uY5ufARgvBSQHIK
-        SE4BySkgOQUk96eAk5dJGJVHof/YD+3btvwz/M74vZNaYvZY92PA7n03VM4qIZ/Ly4GUT8sx6uJ9YTYy
-        A+KOq13UzAvKYeBGGj+Pt1ptBcTtWzgqmBeRw+vcdTK9MgFx5ymef3g/mgH12ORQOimFeWueDYgFizUs
-        PjWvm9mAWO1Yg+ITXnW4C2PA5Ot7Y3NA/BsWhsuAg6eBOSC+YUUaA+r9xwkf+DEg/rAGxDcFJKeA5BSQ
-        nAKSU0ByCkhOAckpIDkFJKeA5BSQnAKSU0ByCkhOAckpIDkFJKeA5BSQnAKSU0ByCkguDYh/ELUGxLc0
-        IPYEWgPiWxoQOz+tAfENWyJiQOy/Lh4XzSHxa/o6XQaE1k3LHBKfqufV7P7A2dss7vy0hsUX7A1Mvo8g
-        SQMC9pttDos/6wcdZAKCHqW+Na4amV5bAQGfFVrU+ILH5uYRI2AGBLwT65d182KyX7sO+YGdAVewVO09
-        9OJHo+wXdk7j7B6ry8qvAcU3BSSngOQUkJwCUgvhE4CERrI+nL3WAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAIMAAAA4CAYAAADekEvQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHlSURBVHhe7dytTgNBGEZhFAqFQqFQKBTXgOIaUCgUCkUQ
+        FQhERUMqKhqCQJGKKkxJKhAIREUlAlFRgahAIAbebXnDth8/tjtHPAlismYOu7NN9ltJ9ykBQgwwYoAR
+        A4wYYMQA+1cM46txeq4/p6eTp9Q76GGJaM+0d6PWKNzb736N4eHoITU2G+ls5QwVUN+oF4G8372H+x3G
+        oDtBa7sVXhDLT//gL5cvC/u+EINuK7XVWngRVEv/sF/a+1IMuiMQQl50nghj4NGQn4v1i/TWfSvHoMNi
+        tBjV19nrlGPQSTNaiOrT0UB3hyKG0ec76PwC5GVYG05jGJwOwgXIh94sihg4L0A/RhUx6I9oAfJBDDBi
+        gBEDjBhgxAAjBhgxwIgBRgwwYoARA4wYYMQAIwYYMcCIAUYMMGKAEQOMGGDEACMGmGPQBxTRAuTDMWgm
+        Q7QA+XAMmuIRLUA+9IllEYNm/JyvnYeLkIfXm9dpDNLd74aLUH3NrWZ5PsPkdlJM8YgWo7o0m2E0Gwvo
+        GETf6M8vRrV9H/JVikF4XOTjeve6tPcLMYheNTlQVpceDfNj/ySMQXSGaO+0w4thef00EFR+jOGLXjke
+        jx+LHyWwvDSdR3M+oz3+8mcMyAcxwIgBRgwwYsBMSh+GiCAy+alsFQAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="bunifuThinButton23.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

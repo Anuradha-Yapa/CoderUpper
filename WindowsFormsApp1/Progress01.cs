@@ -19,7 +19,14 @@ namespace WindowsFormsApp1
 
         private void label16_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Are You Sure Exit the Program?", "Confirmation Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                this.Activate();
+            }
         }
         int startpoint = 0;
         private void timer1_Tick(object sender, EventArgs e)
@@ -30,7 +37,7 @@ namespace WindowsFormsApp1
             {
                 Myprogress.Value = 0;
                 timer1.Stop();
-                ChooseForm cf = new ChooseForm();
+                Login cf = new Login();
                 this.Hide();
                 cf.Show();
             }

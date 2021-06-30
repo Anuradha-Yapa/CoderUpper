@@ -26,7 +26,14 @@ namespace WindowsFormsApp1
 
         private void label16_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Are You Sure Exit the Program?", "Confirmation Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                this.Activate();
+            }
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
