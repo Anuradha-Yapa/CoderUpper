@@ -910,7 +910,7 @@ namespace WindowsFormsApp1
             this.dataGridView1.GridColor = System.Drawing.Color.LightSalmon;
             this.dataGridView1.Location = new System.Drawing.Point(32, 476);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(990, 162);
+            this.dataGridView1.Size = new System.Drawing.Size(1027, 162);
             this.dataGridView1.TabIndex = 200;
             // 
             // bunifuMaterialTextbox2

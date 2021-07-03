@@ -449,6 +449,7 @@ namespace WindowsFormsApp1
             this.Name = "PaymentCof";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PaymentCof";
+            this.Load += new System.EventHandler(this.PaymentCof_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

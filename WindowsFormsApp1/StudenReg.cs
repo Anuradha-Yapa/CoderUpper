@@ -35,11 +35,11 @@ namespace WindowsFormsApp1
                 }
                 else if (Convert.IsDBNull(dr))
                 {
-                    ID = ("00001");
+                    ID = ("S1001");
                 }
                 else
                 {
-                    ID = ("00001");
+                    ID = ("S1001");
                 }
                 con.Close();
 
@@ -130,7 +130,7 @@ namespace WindowsFormsApp1
 
         private void label11_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are You Sure Exit the Program?", "Confirmation Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if (MessageBox.Show("Are You Sure You Want To Exit?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -144,7 +144,7 @@ namespace WindowsFormsApp1
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            int ID = int.Parse(bunifuMaterialTextbox12.Text);
+            string ID = bunifuMaterialTextbox12.Text;
             string Name = bunifuMaterialTextbox1.Text;
             string NIC = bunifuMaterialTextbox10.Text;
             int MobileNumber = int.Parse(bunifuMaterialTextbox4.Text);
@@ -243,7 +243,7 @@ namespace WindowsFormsApp1
                 Semester = "Semester 03";
             }
 
-            string qry = "INSERT INTO Student Values (" + ID + ",'" + Name + "','" + NIC + "','" + DOBDate + "','" + DOBMonth + "','" + DOBYear + "'," + MobileNumber + ",'" + EmailAddress + "','" + Address + "','" + OLMath + "','" + OLEnglish + "','" + ALEnglish + "','" + ALIT + "','" + Degree + "','" + Year + "','" + Semester + "')";
+            string qry = "INSERT INTO Student Values ('" + ID + "','" + Name + "','" + NIC + "','" + DOBDate + "','" + DOBMonth + "','" + DOBYear + "'," + MobileNumber + ",'" + EmailAddress + "','" + Address + "','" + OLMath + "','" + OLEnglish + "','" + ALEnglish + "','" + ALIT + "','" + Degree + "','" + Year + "','" + Semester + "')";
             DBConnection dbc = new DBConnection();
             string feedback = dbc.DBCon(qry);
 
@@ -390,10 +390,10 @@ namespace WindowsFormsApp1
                     bunifuMaterialTextbox4.Text = da.GetValue(6).ToString();
                     bunifuMaterialTextbox3.Text = da.GetValue(7).ToString();
                     bunifuMaterialTextbox5.Text = da.GetValue(8).ToString();
-                    bunifuMetroTextbox2.Text = da.GetValue(9).ToString();
-                    bunifuMetroTextbox1.Text = da.GetValue(10).ToString();
-                    bunifuMetroTextbox3.Text = da.GetValue(11).ToString();
-                    bunifuMetroTextbox4.Text = da.GetValue(12).ToString();
+                    //bunifuMetroTextbox2.Text = da.GetValue(9).ToString();
+                    //bunifuMetroTextbox1.Text = da.GetValue(10).ToString();
+                    //bunifuMetroTextbox3.Text = da.GetValue(11).ToString();
+                    //bunifuMetroTextbox4.Text = da.GetValue(12).ToString();
                     bunifuMaterialTextbox11.Text = da.GetValue(13).ToString();
 
                     string years = da.GetValue(14).ToString();

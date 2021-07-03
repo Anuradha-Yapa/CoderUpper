@@ -110,5 +110,10 @@ namespace WindowsFormsApp1
 
             MessageBox.Show(feedback);
         }
+
+        private void PaymentCof_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -108,3 +108,4 @@ C:\Users\ASUS\Desktop\AssignmentProject\project01\WindowsFormsApp1\obj\Debug\Win
 C:\Users\ASUS\Desktop\AssignmentProject\project01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 C:\Users\ASUS\Desktop\AssignmentProject\project01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\ASUS\Desktop\AssignmentProject\project01\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+E:\Project\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources

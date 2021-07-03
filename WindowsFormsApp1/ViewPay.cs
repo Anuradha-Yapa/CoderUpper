@@ -39,7 +39,25 @@ namespace WindowsFormsApp1
 
         private void ViewPay_Load(object sender, EventArgs e)
         {
-            
+            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True";
+            string qry = "SELECT * FROM Payments";
+
+
+
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter(qry, con);
+                DataSet ds = new DataSet();
+                da.Fill(ds, "Payments");
+                dataGridView1.DataSource = ds.Tables["Payments"];
+            }
+
+
+
+            catch (SqlException SE)
+            {
+                MessageBox.Show(SE.ToString());
+            }
         }
     }
 }
