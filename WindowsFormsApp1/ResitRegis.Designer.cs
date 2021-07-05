@@ -449,6 +449,7 @@ namespace WindowsFormsApp1
             this.Name = "ResitRegis";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ResitRegis";
+            this.Load += new System.EventHandler(this.ResitRegis_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

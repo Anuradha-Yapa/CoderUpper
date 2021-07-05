@@ -148,8 +148,8 @@ namespace WindowsFormsApp1
             string ProfessionalQualifications = bunifuMaterialTextbox13.Text;
 
             string qry = "INSERT INTO Lecturer Values (" + ID + ",'" + Name + "','" + NIC + "','" + DOBDate + "','" + DOBMonth + "','" + DOBYear + "','" + MobileNumber + "','" + EmailAddress + "','" + Address + "','" + AcademicQualifications + "','" + ProfessionalQualifications + "')";
-            DBConnection dbc = new DBConnection();
-            string feedback = dbc.DBCon(qry);
+            DatabaseConnection dbc = new DatabaseConnection();
+            string feedback = dbc.DBConnection(qry);
 
             MessageBox.Show(feedback);
         }
@@ -245,8 +245,8 @@ namespace WindowsFormsApp1
             string ProfessionalQualifications = bunifuMaterialTextbox13.Text;
 
             string qry = "UPDATE Lecturer SET Name='" + Name + "',NIC='" + NIC + "',DOBDate='" + DOBDate + "',DOBMonth='" + DOBMonth + "',DOBYear='" + DOBYear + "',MobileNumber='" + MobileNumber + "',EmailAddress='" + EmailAddress + "',Address='" + Address + "',AcadamicQualifications='" + AcademicQualifications + "',ProfessionalQualification='" + ProfessionalQualifications + "' WHERE ID = " + ID + " ";
-            DBConnection dbc = new DBConnection();
-            string feedback = dbc.DBCon(qry);
+            DatabaseConnection dbc = new DatabaseConnection();
+            string feedback = dbc.DBConnection(qry);
 
             MessageBox.Show(feedback);
         }

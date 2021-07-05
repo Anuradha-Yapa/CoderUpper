@@ -99,8 +99,8 @@ namespace WindowsFormsApp1
             int StudentID = int.Parse(bunifuMaterialTextbox8.Text);
 
             string qry = "INSERT INTO ResearchProjects Values (" + ProjectID + ",'" + ProjectName + "','" + Area + "','" + Description + "','" + Duration + "','" +Status+ "','" + Supervisors + "','" + StudentName + "'," + StudentID + ")";
-            DBConnection dbc = new DBConnection();
-            string feedback = dbc.DBCon(qry);
+            DatabaseConnection dbc = new DatabaseConnection();
+            string feedback = dbc.DBConnection(qry);
 
             MessageBox.Show(feedback);
 
@@ -217,8 +217,8 @@ namespace WindowsFormsApp1
             int StudentID = int.Parse(bunifuMaterialTextbox8.Text);
 
             string qry = "UPDATE ResearchProjects SET ProjectName='" + ProjectName + "',Area='" + Area + "',Description='" + Description + "',Duration='" + Duration + "',Status='" + Status + "',Supervisors='" + Supervisors + "', StudentName='" + StudentName + "',StudentID= " + StudentID + " WHERE ProjectID = " + ProjectID + "  ";
-            DBConnection dbc = new DBConnection();
-            string feedback = dbc.DBCon(qry);
+            DatabaseConnection dbc = new DatabaseConnection();
+            string feedback = dbc.DBConnection(qry);
 
             MessageBox.Show(feedback);
         }

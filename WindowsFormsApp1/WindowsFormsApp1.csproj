@@ -90,7 +90,7 @@
     <Compile Include="Course01.Designer.cs">
       <DependentUpon>Course01.cs</DependentUpon>
     </Compile>
-    <Compile Include="DBConnection.cs" />
+    <Compile Include="DatabaseConnection.cs" />
     <Compile Include="Exam01.cs">
       <SubType>Form</SubType>
     </Compile>

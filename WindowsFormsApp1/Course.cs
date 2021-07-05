@@ -123,8 +123,8 @@ namespace WindowsFormsApp1
 
             string qry = "INSERT INTO Course Values (" + CourseID + ",'" + CourseCode + "','" + CourseName + "','" + NoOfCredits + "','" + NoOfUnits + "'," + CourseFee + "," + LecturerID + ",'" + LecturerName + "', '"+Description+"')";
 
-            DBConnection dbc = new DBConnection();
-            string feedback = dbc.DBCon(qry);
+            DatabaseConnection dbc = new DatabaseConnection();
+            string feedback = dbc.DBConnection(qry);
 
             MessageBox.Show(feedback);
         }
@@ -172,8 +172,8 @@ namespace WindowsFormsApp1
 
             string qry = "UPDATE Course SET CourseCode='" + CourseCode + "',CourseName='" + CourseName + "',NoOfCredits='" + NoOfCredits + "',NoOfUnits='" + NoOfUnits + "',CourseFee=" + CourseFee + ",LecturerID=" + LecturerID + ", LecturerName='" + LecturerName + "',Descriptio='" + Description + "', WHERE CourseID =" + CourseID + "  ";
 
-            DBConnection dbc = new DBConnection();
-            string feedback = dbc.DBCon(qry);
+            DatabaseConnection dbc = new DatabaseConnection();
+            string feedback = dbc.DBConnection(qry);
 
             MessageBox.Show(feedback);
         }

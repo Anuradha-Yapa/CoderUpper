@@ -128,8 +128,8 @@ namespace WindowsFormsApp1
             string Subject4 = bunifuMaterialTextbox6.Text;
 
             string qry = "INSERT INTO Subjects Values ("+ID+",'" +Subject1+ "','" + Subject2 + "','" + Subject3 + "','" + Subject4 + "')";
-            DBConnection dbc = new DBConnection();
-            string feedback = dbc.DBCon(qry);
+            DatabaseConnection dbc = new DatabaseConnection();
+            string feedback = dbc.DBConnection(qry);
 
             MessageBox.Show(feedback);
 
@@ -149,8 +149,8 @@ namespace WindowsFormsApp1
             string Grade4 = bunifuMaterialTextbox10.Text;
 
             string qry = "INSERT INTO Examination Values (" + StudentID + ",'" + Subject1 + "','" + Grade1 + "','" + Subject2 + "','" + Grade2 + "','" + Subject3 + "','" + Grade3 + "','" + Subject4 + "', '"+Grade4+"')";
-            DBConnection dbc = new DBConnection();
-            string feedback = dbc.DBCon(qry);
+            DatabaseConnection dbc = new DatabaseConnection();
+            string feedback = dbc.DBConnection(qry);
 
             MessageBox.Show(feedback);
 

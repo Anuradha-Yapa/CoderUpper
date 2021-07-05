@@ -42,11 +42,16 @@ namespace WindowsFormsApp1
 
             String del = "DELETE FROM  Course where CourseID =" + courseID + "";
 
-            DBConnection dbc = new DBConnection();
-            string feedback = dbc.DBCon(del);
+            DatabaseConnection dbc = new DatabaseConnection();
+            string feedback = dbc.DBConnection(del);
 
             MessageBox.Show(feedback);
             bunifuMaterialTextbox3.Text = "";
+        }
+
+        private void RemvCourses_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

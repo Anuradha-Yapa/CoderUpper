@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
 
         private void label16_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are You Sure Exit the Program?", "Confirmation Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if (MessageBox.Show("Are You Sure You Want To Exit?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -43,15 +43,24 @@ namespace WindowsFormsApp1
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            int UserID = int.Parse(bunifuMaterialTextbox3.Text);
+            int ID = int.Parse(bunifuMetroTextbox8.Text);
+            String del = "DELETE FROM Student where ID =" + ID + "";
 
-            String del = "DELETE FROM Student where ID =" + UserID + "";
-
-            DBConnection dbc = new DBConnection();
-            string feedback = dbc.DBCon(del);
-
+            DatabaseConnection dbc = new DatabaseConnection();
+            string feedback = dbc.DBConnection(del);
             MessageBox.Show(feedback);
-            bunifuMaterialTextbox3.Text = "";
+
+            bunifuMetroTextbox8.Text = "";
+        }
+
+        private void StuRemv_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuMetroTextbox8_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -105,8 +105,8 @@ namespace WindowsFormsApp1
             string InvoiceNumber = bunifuMaterialTextbox6.Text;
 
             string qry = "INSERT INTO Payments Values (" + ID + ",'" + StudentName + "','" + ResittingModule + "','" + InvoiceNumber + "')";
-            DBConnection dbc = new DBConnection();
-            string feedback = dbc.DBCon(qry);
+            DatabaseConnection dbc = new DatabaseConnection();
+            string feedback = dbc.DBConnection(qry);
 
             MessageBox.Show(feedback);
         }

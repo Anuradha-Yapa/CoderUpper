@@ -7,11 +7,21 @@ using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
-    class DBConnection
+    class DatabaseConnection
     {
-        public string DBCon(String qry)
+        public DatabaseConnection()
+        {}
+
+
+        public string ConString()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True");
+            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True";
+            return con;
+        }
+
+        public string DBConnection(String qry)
+        {
+            SqlConnection con = new SqlConnection(ConString());
             SqlCommand cmd = new SqlCommand(qry, con);
 
             try
@@ -23,7 +33,7 @@ namespace WindowsFormsApp1
 
             catch(SqlException se)
             {
-                return "Operation Failed - Error " + se;
+                return "Operation Failed. - Error " + se;
             }
 
             finally

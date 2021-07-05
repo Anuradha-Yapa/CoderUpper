@@ -42,11 +42,16 @@ namespace WindowsFormsApp1
 
             String del = "DELETE FROM  ResearchProjects where ProjectID =" + projID + "";
 
-            DBConnection dbc = new DBConnection();
-            string feedback = dbc.DBCon(del);
+            DatabaseConnection dbc = new DatabaseConnection();
+            string feedback = dbc.DBConnection(del);
 
             MessageBox.Show(feedback);
             bunifuMaterialTextbox3.Text = "";
+        }
+
+        private void ProjRemv_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

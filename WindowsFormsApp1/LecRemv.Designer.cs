@@ -100,7 +100,7 @@ namespace WindowsFormsApp1
             this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(222, 235);
             this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
-            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(224, 36);
+            this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(253, 36);
             this.bunifuMaterialTextbox3.TabIndex = 165;
             this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuMaterialTextbox3.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox3_OnValueChanged);
@@ -187,6 +187,7 @@ namespace WindowsFormsApp1
             this.Name = "LecRemv";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LecRemv";
+            this.Load += new System.EventHandler(this.LecRemv_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

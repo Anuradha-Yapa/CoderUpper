@@ -186,6 +186,7 @@ namespace WindowsFormsApp1
             this.Name = "ProjRemv";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProjRemv";
+            this.Load += new System.EventHandler(this.ProjRemv_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

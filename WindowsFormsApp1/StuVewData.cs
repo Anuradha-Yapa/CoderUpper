@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
 
         private void label22_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are You Sure Exit the Program?", "Confirmation Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if (MessageBox.Show("Are You Sure You Want To Exit?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -28,7 +28,7 @@ namespace WindowsFormsApp1
             {
                 this.Activate();
             }
-            
+
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
@@ -40,10 +40,10 @@ namespace WindowsFormsApp1
 
         private void StuVewData_Load(object sender, EventArgs e)
         {
-            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True";
+            DatabaseConnection dbc = new DatabaseConnection();
+
+            string con = dbc.ConString();
             string qry = "SELECT * FROM Student";
-
-
 
             try
             {
@@ -53,12 +53,15 @@ namespace WindowsFormsApp1
                 dataGridView1.DataSource = ds.Tables["Student"];
             }
 
-
-
             catch (SqlException SE)
             {
                 MessageBox.Show(SE.ToString());
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 

@@ -106,11 +106,16 @@ namespace WindowsFormsApp1
             string ResittingModule = bunifuMaterialTextbox1.Text;
 
             string qry = "INSERT INTO Resitter Values (" + ID + ",'" + Name + "', '"+ResittingModule+"')";
-            DBConnection dbc = new DBConnection();
-            string feedback = dbc.DBCon(qry);
+            DatabaseConnection dbc = new DatabaseConnection();
+            string feedback = dbc.DBConnection(qry);
 
             MessageBox.Show(feedback);
 
+
+        }
+
+        private void ResitRegis_Load(object sender, EventArgs e)
+        {
 
         }
     }
