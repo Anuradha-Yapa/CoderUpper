@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label13.Location = new System.Drawing.Point(205, 114);
+            this.label13.Location = new System.Drawing.Point(203, 62);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(307, 33);
             this.label13.TabIndex = 155;
