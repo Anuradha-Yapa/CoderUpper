@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
 
         private void label16_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are You Sure Exit the Program?", "Confirmation Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if (MessageBox.Show("Are You Sure You Want To Exit?", "CONFIRM EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -158,7 +158,9 @@ namespace WindowsFormsApp1
 
         private void AssigningGrade_Load(object sender, EventArgs e)
         {
-
+            bunifuMaterialTextbox3.Select();
+            this.ActiveControl = bunifuMaterialTextbox3;
+            bunifuMaterialTextbox1.Focus();
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
@@ -174,6 +176,11 @@ namespace WindowsFormsApp1
             bunifuMaterialTextbox9.Text = "";
             bunifuMaterialTextbox6.Text = "";
             bunifuMaterialTextbox10.Text = "";
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

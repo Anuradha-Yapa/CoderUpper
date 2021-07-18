@@ -138,7 +138,7 @@ namespace WindowsFormsApp1
 
         private void label11_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are You Sure You Want To Exit?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (MessageBox.Show("Are You Sure You Want To Exit?", "CONFIRM EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -146,7 +146,6 @@ namespace WindowsFormsApp1
             {
                 this.Activate();
             }
-            
 
         }
 

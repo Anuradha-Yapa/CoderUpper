@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
 
         private void label22_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are You Sure You Want To Exit?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (MessageBox.Show("Are You Sure You Want To Exit?", "CONFIRM EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }

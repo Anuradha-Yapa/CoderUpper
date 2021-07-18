@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
 
         private void label22_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are You Sure Exit the Program?", "Confirmation Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if (MessageBox.Show("Are You Sure You Want To Exit?", "CONFIRM EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -58,6 +58,11 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show(SE.ToString());
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

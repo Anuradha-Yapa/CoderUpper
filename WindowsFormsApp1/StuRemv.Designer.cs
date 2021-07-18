@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(109, 214);
+            this.label1.Location = new System.Drawing.Point(95, 214);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 28);
             this.label1.TabIndex = 130;
@@ -152,14 +152,14 @@ namespace WindowsFormsApp1
             // 
             this.bunifuMetroTextbox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.bunifuMetroTextbox8.BorderColorFocused = System.Drawing.Color.Purple;
-            this.bunifuMetroTextbox8.BorderColorIdle = System.Drawing.Color.Lime;
+            this.bunifuMetroTextbox8.BorderColorIdle = System.Drawing.Color.Purple;
             this.bunifuMetroTextbox8.BorderColorMouseHover = System.Drawing.Color.Purple;
             this.bunifuMetroTextbox8.BorderThickness = 4;
             this.bunifuMetroTextbox8.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuMetroTextbox8.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuMetroTextbox8.ForeColor = System.Drawing.Color.Purple;
             this.bunifuMetroTextbox8.isPassword = false;
-            this.bunifuMetroTextbox8.Location = new System.Drawing.Point(233, 201);
+            this.bunifuMetroTextbox8.Location = new System.Drawing.Point(219, 201);
             this.bunifuMetroTextbox8.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
             this.bunifuMetroTextbox8.Name = "bunifuMetroTextbox8";
             this.bunifuMetroTextbox8.Size = new System.Drawing.Size(280, 55);

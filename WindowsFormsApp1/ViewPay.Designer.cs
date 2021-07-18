@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewPay));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -45,7 +45,7 @@ namespace WindowsFormsApp1
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Century Gothic", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.Purple;
-            this.label23.Location = new System.Drawing.Point(13, 53);
+            this.label23.Location = new System.Drawing.Point(13, 56);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(200, 9);
             this.label23.TabIndex = 167;
@@ -56,7 +56,7 @@ namespace WindowsFormsApp1
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Old English Text MT", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.Purple;
-            this.label24.Location = new System.Drawing.Point(40, 9);
+            this.label24.Location = new System.Drawing.Point(40, 11);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(139, 42);
             this.label24.TabIndex = 166;
@@ -79,7 +79,7 @@ namespace WindowsFormsApp1
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label13.Location = new System.Drawing.Point(544, 32);
+            this.label13.Location = new System.Drawing.Point(541, 32);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(267, 33);
             this.label13.TabIndex = 164;
@@ -103,7 +103,7 @@ namespace WindowsFormsApp1
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.DarkTurquoise;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Azure;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(13, 564);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(15, 552);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(177, 65);
@@ -115,20 +115,21 @@ namespace WindowsFormsApp1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PeachPuff;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightCoral;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.PeachPuff;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightCoral;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.LightSalmon;
-            this.dataGridView1.Location = new System.Drawing.Point(219, 113);
+            this.dataGridView1.Location = new System.Drawing.Point(319, 101);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1056, 516);
+            this.dataGridView1.Size = new System.Drawing.Size(736, 516);
             this.dataGridView1.TabIndex = 203;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ViewPay
             // 

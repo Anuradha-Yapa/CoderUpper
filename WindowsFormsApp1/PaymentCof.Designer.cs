@@ -70,7 +70,7 @@ namespace WindowsFormsApp1
             this.bunifuDropdown4.BackColor = System.Drawing.Color.Violet;
             this.bunifuDropdown4.BorderRadius = 0;
             this.bunifuDropdown4.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown4.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuDropdown4.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuDropdown4.ForeColor = System.Drawing.Color.DarkMagenta;
             this.bunifuDropdown4.Items = new string[] {
         "Semester 01",
@@ -90,7 +90,7 @@ namespace WindowsFormsApp1
             this.bunifuDropdown5.BackColor = System.Drawing.Color.Violet;
             this.bunifuDropdown5.BorderRadius = 0;
             this.bunifuDropdown5.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown5.Font = new System.Drawing.Font("Candara", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuDropdown5.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuDropdown5.ForeColor = System.Drawing.Color.DarkMagenta;
             this.bunifuDropdown5.Items = new string[] {
         "Year 1",
@@ -130,7 +130,7 @@ namespace WindowsFormsApp1
             // bunifuMaterialTextbox4
             // 
             this.bunifuMaterialTextbox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox4.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuMaterialTextbox4.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuMaterialTextbox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuMaterialTextbox4.HintForeColor = System.Drawing.Color.Empty;
             this.bunifuMaterialTextbox4.HintText = "";
@@ -138,7 +138,7 @@ namespace WindowsFormsApp1
             this.bunifuMaterialTextbox4.LineFocusedColor = System.Drawing.Color.BlueViolet;
             this.bunifuMaterialTextbox4.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.bunifuMaterialTextbox4.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
-            this.bunifuMaterialTextbox4.LineThickness = 3;
+            this.bunifuMaterialTextbox4.LineThickness = 4;
             this.bunifuMaterialTextbox4.Location = new System.Drawing.Point(201, 211);
             this.bunifuMaterialTextbox4.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
@@ -171,7 +171,7 @@ namespace WindowsFormsApp1
             // bunifuMaterialTextbox3
             // 
             this.bunifuMaterialTextbox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuMaterialTextbox3.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuMaterialTextbox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuMaterialTextbox3.HintForeColor = System.Drawing.Color.Empty;
             this.bunifuMaterialTextbox3.HintText = "";
@@ -179,7 +179,7 @@ namespace WindowsFormsApp1
             this.bunifuMaterialTextbox3.LineFocusedColor = System.Drawing.Color.BlueViolet;
             this.bunifuMaterialTextbox3.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.bunifuMaterialTextbox3.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
-            this.bunifuMaterialTextbox3.LineThickness = 3;
+            this.bunifuMaterialTextbox3.LineThickness = 4;
             this.bunifuMaterialTextbox3.Location = new System.Drawing.Point(201, 161);
             this.bunifuMaterialTextbox3.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox3.Name = "bunifuMaterialTextbox3";
@@ -222,7 +222,7 @@ namespace WindowsFormsApp1
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label13.Location = new System.Drawing.Point(520, 33);
+            this.label13.Location = new System.Drawing.Point(501, 34);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(313, 33);
             this.label13.TabIndex = 194;
@@ -231,7 +231,7 @@ namespace WindowsFormsApp1
             // bunifuMaterialTextbox2
             // 
             this.bunifuMaterialTextbox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuMaterialTextbox2.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuMaterialTextbox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuMaterialTextbox2.HintForeColor = System.Drawing.Color.Empty;
             this.bunifuMaterialTextbox2.HintText = "";
@@ -239,7 +239,7 @@ namespace WindowsFormsApp1
             this.bunifuMaterialTextbox2.LineFocusedColor = System.Drawing.Color.BlueViolet;
             this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
-            this.bunifuMaterialTextbox2.LineThickness = 3;
+            this.bunifuMaterialTextbox2.LineThickness = 4;
             this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(201, 327);
             this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
@@ -250,7 +250,7 @@ namespace WindowsFormsApp1
             // bunifuMaterialTextbox1
             // 
             this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuMaterialTextbox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
             this.bunifuMaterialTextbox1.HintText = "";
@@ -258,7 +258,7 @@ namespace WindowsFormsApp1
             this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.BlueViolet;
             this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
+            this.bunifuMaterialTextbox1.LineThickness = 4;
             this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(201, 270);
             this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
@@ -289,7 +289,7 @@ namespace WindowsFormsApp1
             // bunifuMaterialTextbox5
             // 
             this.bunifuMaterialTextbox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuMaterialTextbox5.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuMaterialTextbox5.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.bunifuMaterialTextbox5.HintForeColor = System.Drawing.Color.Empty;
             this.bunifuMaterialTextbox5.HintText = "";
@@ -297,8 +297,8 @@ namespace WindowsFormsApp1
             this.bunifuMaterialTextbox5.LineFocusedColor = System.Drawing.Color.BlueViolet;
             this.bunifuMaterialTextbox5.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.bunifuMaterialTextbox5.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
-            this.bunifuMaterialTextbox5.LineThickness = 3;
-            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(201, 388);
+            this.bunifuMaterialTextbox5.LineThickness = 4;
+            this.bunifuMaterialTextbox5.Location = new System.Drawing.Point(202, 388);
             this.bunifuMaterialTextbox5.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
             this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(521, 36);
@@ -308,7 +308,7 @@ namespace WindowsFormsApp1
             // bunifuMaterialTextbox6
             // 
             this.bunifuMaterialTextbox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox6.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuMaterialTextbox6.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuMaterialTextbox6.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.bunifuMaterialTextbox6.HintForeColor = System.Drawing.Color.Empty;
             this.bunifuMaterialTextbox6.HintText = "";
@@ -316,13 +316,14 @@ namespace WindowsFormsApp1
             this.bunifuMaterialTextbox6.LineFocusedColor = System.Drawing.Color.BlueViolet;
             this.bunifuMaterialTextbox6.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.bunifuMaterialTextbox6.LineMouseHoverColor = System.Drawing.Color.BlueViolet;
-            this.bunifuMaterialTextbox6.LineThickness = 3;
+            this.bunifuMaterialTextbox6.LineThickness = 4;
             this.bunifuMaterialTextbox6.Location = new System.Drawing.Point(898, 161);
             this.bunifuMaterialTextbox6.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox6.Name = "bunifuMaterialTextbox6";
             this.bunifuMaterialTextbox6.Size = new System.Drawing.Size(345, 36);
             this.bunifuMaterialTextbox6.TabIndex = 214;
             this.bunifuMaterialTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox6.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox6_OnValueChanged);
             // 
             // label22
             // 
@@ -354,7 +355,7 @@ namespace WindowsFormsApp1
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Purple;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Violet;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(908, 529);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(697, 529);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(209, 67);
@@ -380,7 +381,7 @@ namespace WindowsFormsApp1
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.DarkTurquoise;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Azure;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(201, 529);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(480, 529);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(209, 67);

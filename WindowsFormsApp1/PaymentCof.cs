@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
 
         private void label22_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are You Sure Exit the Program?", "Confirmation Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if (MessageBox.Show("Are You Sure You Want To Exit?", "CONFIRM EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -85,7 +85,7 @@ namespace WindowsFormsApp1
                     {
                         semNum = 1;
                     }
-                    else
+                    else 
                     {
                         semNum = 2;
                     }
@@ -112,6 +112,13 @@ namespace WindowsFormsApp1
         }
 
         private void PaymentCof_Load(object sender, EventArgs e)
+        {
+            bunifuMaterialTextbox3.Select();
+            this.ActiveControl = bunifuMaterialTextbox3;
+            bunifuMaterialTextbox1.Focus();
+        }
+
+        private void bunifuMaterialTextbox6_OnValueChanged(object sender, EventArgs e)
         {
 
         }

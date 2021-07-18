@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
 
         private void label16_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are You Sure Exit the Program?", "Confirmation Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+            if (MessageBox.Show("Are You Sure You Want To Exit?", "CONFIRM EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            int lectureID = int.Parse(bunifuMaterialTextbox3.Text);
+            int lectureID = int.Parse(bunifuMetroTextbox8.Text);
 
             String del = "DELETE FROM  Lecturer where ID =" + lectureID + "";
 
@@ -52,12 +52,15 @@ namespace WindowsFormsApp1
             string feedback = dbc.DBConnection(del);
 
             MessageBox.Show(feedback);
-            bunifuMaterialTextbox3.Text = "";
+            bunifuMetroTextbox8.Text = "";
         }
 
         private void LecRemv_Load(object sender, EventArgs e)
         {
 
+            bunifuMetroTextbox8.Select();
+            this.ActiveControl = bunifuMetroTextbox8;
+            bunifuMetroTextbox8.Focus();
         }
     }
 }

@@ -42,5 +42,17 @@ namespace WindowsFormsApp1
             cf.Show();
             this.Hide();
         }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are You Sure You Want To Exit?", "CONFIRM EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                this.Activate();
+            }
+        }
     }
 }

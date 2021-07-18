@@ -79,11 +79,11 @@ namespace WindowsFormsApp1
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label13.Location = new System.Drawing.Point(590, 35);
+            this.label13.Location = new System.Drawing.Point(590, 31);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(202, 33);
+            this.label13.Size = new System.Drawing.Size(240, 33);
             this.label13.TabIndex = 170;
-            this.label13.Text = "Course Details";
+            this.label13.Text = "All Course Details";
             // 
             // bunifuThinButton22
             // 

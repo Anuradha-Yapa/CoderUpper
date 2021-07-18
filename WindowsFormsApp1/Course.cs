@@ -86,7 +86,8 @@ namespace WindowsFormsApp1
 
         private void label16_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are You Sure Exit the Program?", "Confirmation Message", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+
+            if (MessageBox.Show("Are You Sure You Want To Exit?", "CONFIRM EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -192,6 +193,11 @@ namespace WindowsFormsApp1
             bunifuMaterialTextbox7.Text = "";
             bunifuMaterialTextbox5.Text = "";
             bunifuMaterialTextbox6.Text = "";
+        }
+
+        private void bunifuMaterialTextbox5_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

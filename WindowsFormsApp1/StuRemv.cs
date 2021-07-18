@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
 
         private void label16_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are You Sure You Want To Exit?", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (MessageBox.Show("Are You Sure You Want To Exit?", "CONFIRM EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -56,6 +56,9 @@ namespace WindowsFormsApp1
         private void StuRemv_Load(object sender, EventArgs e)
         {
 
+            bunifuMetroTextbox8.Select();
+            this.ActiveControl = bunifuMetroTextbox8;
+            bunifuMetroTextbox8.Focus();
         }
 
         private void bunifuMetroTextbox8_OnValueChanged(object sender, EventArgs e)

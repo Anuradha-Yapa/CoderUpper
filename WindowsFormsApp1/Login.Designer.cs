@@ -35,20 +35,21 @@ namespace WindowsFormsApp1
             this.label22 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.Purple;
-            this.label23.Location = new System.Drawing.Point(12, 188);
+            this.label23.Location = new System.Drawing.Point(110, 139);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(333, 17);
+            this.label23.Size = new System.Drawing.Size(422, 20);
             this.label23.TabIndex = 169;
             this.label23.Text = "M o r w e l l   I n s t i t u t e   o f   H i g h e r   E d u c a t i o n";
             // 
@@ -57,7 +58,7 @@ namespace WindowsFormsApp1
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Old English Text MT", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.Purple;
-            this.label24.Location = new System.Drawing.Point(60, 111);
+            this.label24.Location = new System.Drawing.Point(194, 55);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(241, 77);
             this.label24.TabIndex = 168;
@@ -78,39 +79,29 @@ namespace WindowsFormsApp1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(386, 146);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(151, 346);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 19);
+            this.label1.Size = new System.Drawing.Size(71, 23);
             this.label1.TabIndex = 221;
             this.label1.Text = "Admin";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(386, 201);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(126, 398);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 19);
+            this.label2.Size = new System.Drawing.Size(96, 23);
             this.label2.TabIndex = 222;
             this.label2.Text = "Password";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.MistyRose;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(477, 146);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 22);
-            this.textBox1.TabIndex = 223;
             // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.MistyRose;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(477, 202);
+            this.textBox2.Location = new System.Drawing.Point(228, 395);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(195, 31);
@@ -121,7 +112,7 @@ namespace WindowsFormsApp1
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label13.Location = new System.Drawing.Point(229, 21);
+            this.label13.Location = new System.Drawing.Point(164, 196);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(301, 30);
             this.label13.TabIndex = 225;
@@ -145,7 +136,7 @@ namespace WindowsFormsApp1
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.Purple;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Violet;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(257, 277);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(214, 465);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(209, 67);
@@ -153,27 +144,52 @@ namespace WindowsFormsApp1
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.MistyRose;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(228, 343);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.PasswordChar = '*';
+            this.textBox1.Size = new System.Drawing.Size(195, 31);
+            this.textBox1.TabIndex = 228;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Purple;
+            this.label3.Location = new System.Drawing.Point(613, 2);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(33, 32);
+            this.label3.TabIndex = 229;
+            this.label3.Text = "X";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(769, 368);
+            this.ClientSize = new System.Drawing.Size(650, 650);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label24);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(769, 368);
-            this.MinimumSize = new System.Drawing.Size(769, 368);
+            this.MaximumSize = new System.Drawing.Size(650, 650);
+            this.MinimumSize = new System.Drawing.Size(650, 650);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,9 +202,10 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label13;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
