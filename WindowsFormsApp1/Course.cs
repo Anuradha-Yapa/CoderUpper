@@ -14,7 +14,8 @@ namespace WindowsFormsApp1
     public partial class Course : Form
     {
 
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True");
+        DatabaseConnection dbc = new DatabaseConnection();
+        
 
         public Course()
         {
@@ -23,6 +24,7 @@ namespace WindowsFormsApp1
 
         public void ID()
         {
+            SqlConnection con = new SqlConnection(dbc.ConString());
             try
             {
                 string ID;
@@ -58,7 +60,11 @@ namespace WindowsFormsApp1
         {
             ID();
 
-            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True";
+            bunifuMaterialTextbox4.Select();
+            this.ActiveControl = bunifuMaterialTextbox4;
+            bunifuMaterialTextbox4.Focus();
+
+            string con = dbc.ConString();
             string qry = "SELECT * FROM Course";
 
 
@@ -117,27 +123,33 @@ namespace WindowsFormsApp1
             string CourseName = bunifuMaterialTextbox2.Text;
             string NoOfCredits = bunifuMaterialTextbox8.Text;
             string NoOfUnits = bunifuMaterialTextbox10.Text;
-            float CourseFee = float.Parse(bunifuMaterialTextbox11.Text);
+            string CourseFee = bunifuMaterialTextbox11.Text;
             int LecturerID = int.Parse(bunifuMaterialTextbox9.Text);
             string LecturerName = bunifuMaterialTextbox7.Text;
             string Description = bunifuMaterialTextbox5.Text;
 
-            string qry = "INSERT INTO Course Values (" + CourseID + ",'" + CourseCode + "','" + CourseName + "','" + NoOfCredits + "','" + NoOfUnits + "'," + CourseFee + "," + LecturerID + ",'" + LecturerName + "', '"+Description+"')";
+            string qry = "INSERT INTO Course Values (" + CourseID + ",'" + CourseCode + "','" + CourseName + "','" + NoOfCredits + "','" + NoOfUnits + "','" + CourseFee + "'," + LecturerID + ",'" + LecturerName + "', '"+Description+"')";
 
             DatabaseConnection dbc = new DatabaseConnection();
             string feedback = dbc.DBConnection(qry);
 
             MessageBox.Show(feedback);
+
+            string qry2 = "select * from Course";
+            SqlDataAdapter ad = new SqlDataAdapter(qry2, dbc.ConString());
+            DataSet set = new DataSet();
+            ad.Fill(set, "Course");
+            dataGridView1.DataSource = set.Tables["Course"];
         }
 
         private void bunifuThinButton25_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(dbc.ConString());
             con.Open();
 
             if (bunifuMaterialTextbox1.Text != "")
             {
-                SqlCommand cmd = new SqlCommand("SELECT CourseID, CourseCode, CourseName, NoOfCredits, NoOfUnits, CourseFee, LecturerID, LecturerName, Description where CourseID = @CourseID", con);
+                SqlCommand cmd = new SqlCommand("SELECT CourseID, CourseCode, CourseName, NoOfCredits, NoOfUnits, CourseFee, LecturerID, LecturerName, Description from Course where CourseID = @CourseID", con);
 
                 cmd.Parameters.AddWithValue("@CourseID", int.Parse(bunifuMaterialTextbox1.Text));
                 SqlDataReader da = cmd.ExecuteReader();
@@ -171,12 +183,18 @@ namespace WindowsFormsApp1
             string LecturerName = bunifuMaterialTextbox7.Text;
             string Description = bunifuMaterialTextbox5.Text;
 
-            string qry = "UPDATE Course SET CourseCode='" + CourseCode + "',CourseName='" + CourseName + "',NoOfCredits='" + NoOfCredits + "',NoOfUnits='" + NoOfUnits + "',CourseFee=" + CourseFee + ",LecturerID=" + LecturerID + ", LecturerName='" + LecturerName + "',Descriptio='" + Description + "', WHERE CourseID =" + CourseID + "  ";
+            string qry = "UPDATE Course SET CourseCode='" + CourseCode + "',CourseName='" + CourseName + "',NoOfCredits='" + NoOfCredits + "',NoOfUnits='" + NoOfUnits + "',CourseFee=" + CourseFee + ",LecturerID=" + LecturerID + ", LecturerName='" + LecturerName + "',Description='" + Description + "' WHERE CourseID =" + CourseID + "  ";
 
             DatabaseConnection dbc = new DatabaseConnection();
             string feedback = dbc.DBConnection(qry);
 
             MessageBox.Show(feedback);
+
+            string qry2 = "select * from Course";
+            SqlDataAdapter ad = new SqlDataAdapter(qry2, dbc.ConString());
+            DataSet set = new DataSet();
+            ad.Fill(set, "Course");
+            dataGridView1.DataSource = set.Tables["Course"];
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
@@ -196,6 +214,11 @@ namespace WindowsFormsApp1
         }
 
         private void bunifuMaterialTextbox5_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label18_Click(object sender, EventArgs e)
         {
 
         }

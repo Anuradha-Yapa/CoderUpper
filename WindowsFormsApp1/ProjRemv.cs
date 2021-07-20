@@ -38,7 +38,7 @@ namespace WindowsFormsApp1
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            int projID = int.Parse(bunifuMaterialTextbox3.Text);
+            int projID = int.Parse(bunifuMetroTextbox8.Text);
 
             String del = "DELETE FROM  ResearchProjects where ProjectID =" + projID + "";
 
@@ -46,10 +46,22 @@ namespace WindowsFormsApp1
             string feedback = dbc.DBConnection(del);
 
             MessageBox.Show(feedback);
-            bunifuMaterialTextbox3.Text = "";
+            bunifuMetroTextbox8.Text = "";
         }
 
         private void ProjRemv_Load(object sender, EventArgs e)
+        {
+            bunifuMetroTextbox8.Select();
+            this.ActiveControl = bunifuMetroTextbox8;
+            bunifuMetroTextbox8.Focus();
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

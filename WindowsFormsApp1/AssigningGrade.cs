@@ -13,6 +13,8 @@ namespace WindowsFormsApp1
 {
     public partial class AssigningGrade : Form
     {
+        DatabaseConnection dbc = new DatabaseConnection();
+
         public AssigningGrade()
         {
             InitializeComponent();
@@ -44,7 +46,10 @@ namespace WindowsFormsApp1
 
         private void bunifuThinButton24_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True");
+            DropDown(true);
+            TextBox(false);
+            
+            SqlConnection con = new SqlConnection(dbc.ConString());
             con.Open();
 
             if (bunifuMaterialTextbox3.Text != "")
@@ -99,7 +104,7 @@ namespace WindowsFormsApp1
 
             }
 
-            SqlConnection con2 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True");
+            SqlConnection con2 = new SqlConnection(dbc.ConString());
             con.Open();
 
             if (bunifuMaterialTextbox3.Text != "")
@@ -154,10 +159,28 @@ namespace WindowsFormsApp1
 
             MessageBox.Show(feedback);
 
+            DropDown(false);
+            TextBox(true);
+
+            bunifuMaterialTextbox3.Text = "";
+            bunifuMaterialTextbox1.Text = "";
+            bunifuMaterialTextbox2.Text = "";
+            bunifuMaterialTextbox12.Text = "";
+            bunifuMaterialTextbox7.Text = "";
+            bunifuMaterialTextbox4.Text = "";
+            bunifuMaterialTextbox8.Text = "";
+            bunifuMaterialTextbox5.Text = "";
+            bunifuMaterialTextbox9.Text = "";
+            bunifuMaterialTextbox6.Text = "";
+            bunifuMaterialTextbox10.Text = "";
+
         }
 
         private void AssigningGrade_Load(object sender, EventArgs e)
         {
+            DropDown(true);
+            TextBox(false);
+            
             bunifuMaterialTextbox3.Select();
             this.ActiveControl = bunifuMaterialTextbox3;
             bunifuMaterialTextbox1.Focus();
@@ -165,6 +188,9 @@ namespace WindowsFormsApp1
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
+            DropDown(false);
+            TextBox(true);
+            
             bunifuMaterialTextbox3.Text = "";
             bunifuMaterialTextbox1.Text = "";
             bunifuMaterialTextbox2.Text = "";
@@ -181,6 +207,55 @@ namespace WindowsFormsApp1
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        void DropDown(bool show)
+        {
+            bunifuDropdown3.Visible = show;
+            bunifuDropdown1.Visible = show;
+        }
+
+        void TextBox(bool show)
+        {
+            bunifuMaterialTextbox11.Visible = show;
+            bunifuMaterialTextbox13.Visible = show;
+        }
+
+        private void bunifuMaterialTextbox7_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SendKeys.Send("{TAB}");
+            }
+        }
+
+        private void bunifuMaterialTextbox8_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+        }
+
+        private void bunifuMaterialTextbox8_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SendKeys.Send("{TAB}");
+            }
+        }
+
+        private void bunifuMaterialTextbox9_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SendKeys.Send("{TAB}");
+            }
+        }
+
+        private void bunifuMaterialTextbox10_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SendKeys.Send("{TAB}");
+            }
         }
     }
 }

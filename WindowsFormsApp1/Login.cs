@@ -33,25 +33,20 @@ namespace WindowsFormsApp1
 
             else
             {
-                MessageBox.Show("Incorrrect UserName or Password!");
+                MessageBox.Show("Incorrrect Username or Password! TRY AGAIN!");
             }
         }
 
         private void label22_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are You Sure You Want To Exit?", "CONFIRM EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-            else
-            {
-                this.Activate();
-            }
+            
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            textBox1.Select();
+            this.ActiveControl = textBox1;
+            textBox1.Focus();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

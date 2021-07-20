@@ -38,7 +38,7 @@ namespace WindowsFormsApp1
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            int courseID = int.Parse(bunifuMaterialTextbox3.Text);
+            int courseID = int.Parse(bunifuMetroTextbox8.Text);
 
             String del = "DELETE FROM  Course where CourseID =" + courseID + "";
 
@@ -46,12 +46,14 @@ namespace WindowsFormsApp1
             string feedback = dbc.DBConnection(del);
 
             MessageBox.Show(feedback);
-            bunifuMaterialTextbox3.Text = "";
+            bunifuMetroTextbox8.Text = "";
         }
 
         private void RemvCourses_Load(object sender, EventArgs e)
         {
-
+            bunifuMetroTextbox8.Select();
+            this.ActiveControl = bunifuMetroTextbox8;
+            bunifuMetroTextbox8.Focus();
         }
     }
 }

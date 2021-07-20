@@ -39,6 +39,9 @@ namespace WindowsFormsApp1
 
         private void bunifuThinButton24_Click(object sender, EventArgs e)
         {
+            TextBox(false);
+            DropDown(true);
+            
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True");
             con.Open();
 
@@ -109,6 +112,16 @@ namespace WindowsFormsApp1
             string feedback = dbc.DBConnection(qry);
 
             MessageBox.Show(feedback);
+
+            bunifuMaterialTextbox3.Text = "";
+            bunifuMaterialTextbox4.Text = "";
+            bunifuMaterialTextbox1.Text = "";
+            bunifuMaterialTextbox2.Text = "";
+            bunifuMaterialTextbox5.Text = "";
+            bunifuMaterialTextbox3.Text = "";
+            bunifuMaterialTextbox6.Text = "";
+            DropDown(false);
+            TextBox(true);
         }
 
         private void PaymentCof_Load(object sender, EventArgs e)
@@ -116,11 +129,35 @@ namespace WindowsFormsApp1
             bunifuMaterialTextbox3.Select();
             this.ActiveControl = bunifuMaterialTextbox3;
             bunifuMaterialTextbox1.Focus();
+
+            DropDown(true);
+            TextBox(false);
+
         }
 
         private void bunifuMaterialTextbox6_OnValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        public void DropDown(bool show)
+        {
+            bunifuDropdown5.Visible = show;
+            bunifuDropdown4.Visible = show;
+        }
+
+        public void TextBox(bool show)
+        {
+            bunifuMaterialTextbox7.Visible = show;
+            bunifuMaterialTextbox8.Visible = show;
+        }
+
+        private void bunifuMaterialTextbox5_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SendKeys.Send("{TAB}");
+            }
         }
     }
 }

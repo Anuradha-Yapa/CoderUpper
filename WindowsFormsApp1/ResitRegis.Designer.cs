@@ -131,7 +131,7 @@ namespace WindowsFormsApp1
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label13.Location = new System.Drawing.Point(599, 25);
+            this.label13.Location = new System.Drawing.Point(574, 30);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(236, 33);
             this.label13.TabIndex = 174;
@@ -406,7 +406,7 @@ namespace WindowsFormsApp1
             this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.HotPink;
             this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.Honeydew;
             this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton24.Location = new System.Drawing.Point(649, 120);
+            this.bunifuThinButton24.Location = new System.Drawing.Point(630, 120);
             this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton24.Name = "bunifuThinButton24";
             this.bunifuThinButton24.Size = new System.Drawing.Size(132, 52);

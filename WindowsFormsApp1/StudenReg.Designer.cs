@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudenReg));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label3 = new System.Windows.Forms.Label();
@@ -122,6 +122,7 @@ namespace WindowsFormsApp1
             this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(426, 36);
             this.bunifuMaterialTextbox1.TabIndex = 1;
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuMaterialTextbox1_KeyDown);
             // 
             // label3
             // 
@@ -181,6 +182,7 @@ namespace WindowsFormsApp1
             this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(264, 37);
             this.bunifuMaterialTextbox3.TabIndex = 9;
             this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuMaterialTextbox3_KeyDown);
             // 
             // bunifuMaterialTextbox4
             // 
@@ -200,6 +202,7 @@ namespace WindowsFormsApp1
             this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(210, 36);
             this.bunifuMaterialTextbox4.TabIndex = 10;
             this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuMaterialTextbox4_KeyDown);
             // 
             // bunifuDropdown1
             // 
@@ -393,6 +396,8 @@ namespace WindowsFormsApp1
             this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(662, 37);
             this.bunifuMaterialTextbox5.TabIndex = 17;
             this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox5.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox5_OnValueChanged);
+            this.bunifuMaterialTextbox5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuMaterialTextbox5_KeyDown);
             // 
             // bunifuMaterialTextbox6
             // 
@@ -412,6 +417,7 @@ namespace WindowsFormsApp1
             this.bunifuMaterialTextbox6.Size = new System.Drawing.Size(662, 38);
             this.bunifuMaterialTextbox6.TabIndex = 18;
             this.bunifuMaterialTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuMaterialTextbox6_KeyDown);
             // 
             // label13
             // 
@@ -496,6 +502,7 @@ namespace WindowsFormsApp1
             this.bunifuMaterialTextbox10.Size = new System.Drawing.Size(210, 36);
             this.bunifuMaterialTextbox10.TabIndex = 30;
             this.bunifuMaterialTextbox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox10.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuMaterialTextbox10_KeyDown);
             // 
             // label19
             // 
@@ -608,6 +615,7 @@ namespace WindowsFormsApp1
             this.bunifuMaterialTextbox11.Size = new System.Drawing.Size(326, 36);
             this.bunifuMaterialTextbox11.TabIndex = 37;
             this.bunifuMaterialTextbox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox11.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuMaterialTextbox11_KeyDown);
             // 
             // label21
             // 
@@ -638,6 +646,7 @@ namespace WindowsFormsApp1
             this.bunifuMaterialTextbox12.Size = new System.Drawing.Size(230, 36);
             this.bunifuMaterialTextbox12.TabIndex = 40;
             this.bunifuMaterialTextbox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox12.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuMaterialTextbox12_KeyDown);
             // 
             // label22
             // 
@@ -908,14 +917,14 @@ namespace WindowsFormsApp1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.PeachPuff;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.PeachPuff;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.LightCoral;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.DarkRed;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.PeachPuff;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.LightCoral;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.LightSalmon;
             this.dataGridView1.Location = new System.Drawing.Point(32, 476);
@@ -1095,6 +1104,7 @@ namespace WindowsFormsApp1
             this.bunifuMetroTextbox8.Size = new System.Drawing.Size(61, 34);
             this.bunifuMetroTextbox8.TabIndex = 213;
             this.bunifuMetroTextbox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuMetroTextbox8.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuMetroTextbox8_KeyDown);
             // 
             // bunifuMetroTextbox9
             // 
@@ -1113,6 +1123,7 @@ namespace WindowsFormsApp1
             this.bunifuMetroTextbox9.Size = new System.Drawing.Size(61, 34);
             this.bunifuMetroTextbox9.TabIndex = 214;
             this.bunifuMetroTextbox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuMetroTextbox9.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuMetroTextbox9_KeyDown);
             // 
             // bunifuMetroTextbox10
             // 
@@ -1131,6 +1142,7 @@ namespace WindowsFormsApp1
             this.bunifuMetroTextbox10.Size = new System.Drawing.Size(61, 34);
             this.bunifuMetroTextbox10.TabIndex = 215;
             this.bunifuMetroTextbox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuMetroTextbox10.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuMetroTextbox10_KeyDown);
             // 
             // bunifuMetroTextbox11
             // 
@@ -1149,6 +1161,7 @@ namespace WindowsFormsApp1
             this.bunifuMetroTextbox11.Size = new System.Drawing.Size(61, 34);
             this.bunifuMetroTextbox11.TabIndex = 216;
             this.bunifuMetroTextbox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bunifuMetroTextbox11.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bunifuMetroTextbox11_KeyDown);
             // 
             // bunifuMaterialTextbox14
             // 

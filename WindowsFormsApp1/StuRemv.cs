@@ -43,22 +43,22 @@ namespace WindowsFormsApp1
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            int ID = int.Parse(bunifuMetroTextbox8.Text);
+            int ID = int.Parse(bunifuMetroTextbox1.Text);
             String del = "DELETE FROM Student where ID =" + ID + "";
 
             DatabaseConnection dbc = new DatabaseConnection();
             string feedback = dbc.DBConnection(del);
             MessageBox.Show(feedback);
 
-            bunifuMetroTextbox8.Text = "";
+            bunifuMetroTextbox1.Text = "";
         }
 
         private void StuRemv_Load(object sender, EventArgs e)
         {
 
-            bunifuMetroTextbox8.Select();
-            this.ActiveControl = bunifuMetroTextbox8;
-            bunifuMetroTextbox8.Focus();
+            bunifuMetroTextbox1.Select();
+            this.ActiveControl = bunifuMetroTextbox1;
+            bunifuMetroTextbox1.Focus();
         }
 
         private void bunifuMetroTextbox8_OnValueChanged(object sender, EventArgs e)

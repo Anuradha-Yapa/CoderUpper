@@ -13,8 +13,9 @@ namespace WindowsFormsApp1
 {
     public partial class ReserchProj : Form
     {
+        DatabaseConnection dbc = new DatabaseConnection();
 
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True");
+
         public ReserchProj()
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace WindowsFormsApp1
 
         public void ID()
         {
+            SqlConnection con = new SqlConnection(dbc.ConString());
             try
             {
                 string ID;
@@ -101,8 +103,15 @@ namespace WindowsFormsApp1
             string qry = "INSERT INTO ResearchProjects Values (" + ProjectID + ",'" + ProjectName + "','" + Area + "','" + Description + "','" + Duration + "','" +Status+ "','" + Supervisors + "','" + StudentName + "'," + StudentID + ")";
             DatabaseConnection dbc = new DatabaseConnection();
             string feedback = dbc.DBConnection(qry);
-
             MessageBox.Show(feedback);
+
+            string qry2 = "select * from ResearchProjects";
+            SqlDataAdapter ad = new SqlDataAdapter(qry2, dbc.ConString());
+            DataSet set = new DataSet();
+            ad.Fill(set, "ResearchProjects");
+            dataGridView1.DataSource = set.Tables["ResearchProjects"];
+
+           
 
         }
 
@@ -110,8 +119,15 @@ namespace WindowsFormsApp1
         {
             ID();
 
-            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True";
-            string qry = "SELECT * FROM ResearchProject";
+            bunifuMaterialTextbox2.Select();
+            this.ActiveControl = bunifuMaterialTextbox2;
+            bunifuMaterialTextbox2.Focus();
+
+            DropDown(true);
+            TextBox(false);
+
+            string con = dbc.ConString();
+            string qry = "SELECT * FROM ResearchProjects";
 
 
 
@@ -133,12 +149,15 @@ namespace WindowsFormsApp1
 
         private void bunifuThinButton25_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True");
+            DropDown(true);
+            TextBox(false);
+            
+            SqlConnection con = new SqlConnection(dbc.ConString());
             con.Open();
 
             if (bunifuMaterialTextbox1.Text != "")
             {
-                SqlCommand cmd = new SqlCommand("SELECT ProjectID, ProjectName, Area, Description, Duration, Status, Supervisors, StudentName, StudentID where ProjectID = @ProjectID", con);
+                SqlCommand cmd = new SqlCommand("SELECT ProjectID, ProjectName, Area, Description, Duration, Status, Supervisors, StudentName, StudentID from ResearchProjects where ProjectID = @ProjectID", con);
 
                 cmd.Parameters.AddWithValue("@ProjectID", int.Parse(bunifuMaterialTextbox1.Text));
                 SqlDataReader da = cmd.ExecuteReader();
@@ -153,19 +172,20 @@ namespace WindowsFormsApp1
                     string stat = da.GetValue(5).ToString();
 
                     int statNum = 0;
-                    if (stat == "Approved")
+                    if (stat == "Approved            ")
                     {
                         statNum = 0;
                     }
-                    else if (stat == "Denied")
+                    else if (stat == "Declined            ")
                     {
                         statNum = 1;
                     }
                     else
                     {
-                        statNum = 3;
+                        statNum = 2;
                     }
 
+                    bunifuDropdown3.selectedIndex = statNum;
                     bunifuMaterialTextbox10.Text = da.GetValue(6).ToString();
                     bunifuMaterialTextbox6.Text = da.GetValue(7).ToString();
                     bunifuMaterialTextbox8.Text = da.GetValue(8).ToString();
@@ -178,6 +198,9 @@ namespace WindowsFormsApp1
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
+            DropDown(false);
+            TextBox(true);
+            
             bunifuMaterialTextbox1.Text = "";
             bunifuMaterialTextbox2.Text = "";
             bunifuMaterialTextbox7.Text = "";
@@ -221,6 +244,29 @@ namespace WindowsFormsApp1
             string feedback = dbc.DBConnection(qry);
 
             MessageBox.Show(feedback);
+
+            string qry2 = "select * from ResearchProjects";
+            SqlDataAdapter ad = new SqlDataAdapter(qry2, dbc.ConString());
+            DataSet set = new DataSet();
+            ad.Fill(set, "ResearchProjects");
+            dataGridView1.DataSource = set.Tables["ResearchProjects"];
+
+       
+        }
+
+        private void bunifuMaterialTextbox7_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        void DropDown(bool show)
+        {
+            bunifuDropdown3.Visible = show;
+        }
+
+        void TextBox(bool show)
+        {
+            bunifuMaterialTextbox11.Visible = show;
         }
     }
 }
