@@ -209,6 +209,7 @@ namespace WindowsFormsApp1
             this.Name = "Course01";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Course01";
+            this.Load += new System.EventHandler(this.Course01_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

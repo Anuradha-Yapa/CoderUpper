@@ -56,5 +56,10 @@ namespace WindowsFormsApp1
             LecR.Show();
             this.Hide();
         }
+
+        private void Lectures01_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

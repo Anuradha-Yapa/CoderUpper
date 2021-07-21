@@ -13,6 +13,8 @@ namespace WindowsFormsApp1
 {
     public partial class PaymentCof : Form
     {
+        DatabaseConnection dbc = new DatabaseConnection();
+
         public PaymentCof()
         {
             InitializeComponent();
@@ -42,7 +44,7 @@ namespace WindowsFormsApp1
             TextBox(false);
             DropDown(true);
             
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(dbc.ConString());
             con.Open();
 
             if (bunifuMaterialTextbox3.Text != "")

@@ -54,5 +54,10 @@ namespace WindowsFormsApp1
                 this.Activate();
             }
         }
+
+        private void Exam01_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

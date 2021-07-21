@@ -40,10 +40,9 @@ namespace WindowsFormsApp1
 
         private void LecViewDetal_Load(object sender, EventArgs e)
         {
-            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True";
+            DatabaseConnection dbc = new DatabaseConnection();
+            string con = dbc.ConString();
             string qry = "SELECT * FROM Lecturer";
-
-
 
             try
             {
@@ -53,12 +52,11 @@ namespace WindowsFormsApp1
                 dataGridView1.DataSource = ds.Tables["Lecturer"];
             }
 
-
-
             catch (SqlException SE)
             {
                 MessageBox.Show(SE.ToString());
             }
+
         }
     }
 }

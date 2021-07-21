@@ -13,6 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class ViewProj : Form
     {
+        DatabaseConnection dbc = new DatabaseConnection();
         public ViewProj()
         {
             InitializeComponent();
@@ -45,7 +46,7 @@ namespace WindowsFormsApp1
 
         private void ViewProj_Load(object sender, EventArgs e)
         {
-            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True";
+            string con = dbc.ConString();
             string qry = "SELECT * FROM ResearchProjects";
 
 

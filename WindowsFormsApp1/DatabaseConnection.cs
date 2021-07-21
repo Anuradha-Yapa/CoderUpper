@@ -9,9 +9,6 @@ namespace WindowsFormsApp1
 {
     class DatabaseConnection
     {
-        public DatabaseConnection()
-        {}
-
 
         public string ConString()
         {

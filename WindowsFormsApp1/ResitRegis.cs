@@ -13,6 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class ResitRegis : Form
     {
+        DatabaseConnection dbc = new DatabaseConnection();
         public ResitRegis()
         {
             InitializeComponent();
@@ -39,7 +40,7 @@ namespace WindowsFormsApp1
 
         private void bunifuThinButton24_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(dbc.ConString());
             con.Open();
 
             if (bunifuMaterialTextbox3.Text != "") 

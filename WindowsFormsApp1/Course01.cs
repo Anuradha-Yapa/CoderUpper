@@ -57,5 +57,10 @@ namespace WindowsFormsApp1
             this.Hide();
 
         }
+
+        private void Course01_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

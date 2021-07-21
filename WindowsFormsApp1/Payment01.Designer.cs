@@ -181,6 +181,7 @@ namespace WindowsFormsApp1
             this.Name = "Payment01";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Payment01";
+            this.Load += new System.EventHandler(this.Payment01_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

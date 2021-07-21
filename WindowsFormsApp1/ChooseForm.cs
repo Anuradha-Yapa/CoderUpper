@@ -70,5 +70,10 @@ namespace WindowsFormsApp1
             Ex1.Show();
             this.Hide();
         }
+
+        private void ChooseForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

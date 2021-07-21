@@ -254,6 +254,7 @@ namespace WindowsFormsApp1
             this.Name = "ChooseForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChooseForm";
+            this.Load += new System.EventHandler(this.ChooseForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

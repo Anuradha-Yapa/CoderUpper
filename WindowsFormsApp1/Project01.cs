@@ -59,5 +59,10 @@ namespace WindowsFormsApp1
             Vp.Show();
             this.Hide();
         }
+
+        private void Project01_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

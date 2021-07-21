@@ -13,6 +13,7 @@ namespace WindowsFormsApp1
 {
     public partial class ViewPay : Form
     {
+        DatabaseConnection dbc = new DatabaseConnection();
         public ViewPay()
         {
             InitializeComponent();
@@ -39,7 +40,7 @@ namespace WindowsFormsApp1
 
         private void ViewPay_Load(object sender, EventArgs e)
         {
-            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Project\WindowsFormsApp1\DatabaseCP.mdf;Integrated Security=True";
+            string con = dbc.ConString();
             string qry = "SELECT * FROM Payments";
 
 

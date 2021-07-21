@@ -50,5 +50,10 @@ namespace WindowsFormsApp1
             this.Hide();
 
         }
+
+        private void Payment01_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
