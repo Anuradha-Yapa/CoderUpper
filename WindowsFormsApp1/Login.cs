@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
             string password = textBox2.Text;
 
 
-            if(UserName=="admin"&& password == "admin123")
+            if(UserName=="John" && password == "123")
             {
                 ChooseForm cf = new ChooseForm();
                 cf.Show();
@@ -33,7 +33,7 @@ namespace WindowsFormsApp1
 
             else
             {
-                MessageBox.Show("Incorrrect Username or Password! TRY AGAIN!");
+                MessageBox.Show("Incorrect Username or Password! TRY AGAIN!");
             }
         }
 

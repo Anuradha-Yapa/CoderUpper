@@ -46,7 +46,7 @@ namespace WindowsFormsApp1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Purple;
-            this.label2.Location = new System.Drawing.Point(49, 101);
+            this.label2.Location = new System.Drawing.Point(55, 114);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(522, 22);
             this.label2.TabIndex = 98;
@@ -59,7 +59,7 @@ namespace WindowsFormsApp1
             this.label1.Font = new System.Drawing.Font("Old English Text MT", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Purple;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(187, 24);
+            this.label1.Location = new System.Drawing.Point(187, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(241, 77);
             this.label1.TabIndex = 97;
